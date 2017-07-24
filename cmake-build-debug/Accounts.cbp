@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Accounts"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/parallels/CLionProjects/Accounts/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/parallels/CLionProjects/Accounts/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/parallels/CLionProjects/Accounts/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/parallels/CLionProjects/Accounts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/parallels/CLionProjects/Accounts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/parallels/CLionProjects/Accounts/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/parallels/CLionProjects/Accounts/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/parallels/CLionProjects/Accounts/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/parallels/CLionProjects/Accounts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/parallels/CLionProjects/Accounts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/parallels/CLionProjects/Accounts/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/parallels/CLionProjects/Accounts/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/parallels/CLionProjects/Accounts/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/parallels/CLionProjects/Accounts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/parallels/CLionProjects/Accounts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Accounts">
+				<Option output="/home/parallels/CLionProjects/Accounts/cmake-build-debug/Accounts" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/parallels/CLionProjects/Accounts/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/parallels/CLionProjects/Accounts/libs"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/parallels/CLionProjects/Accounts/cmake-build-debug/Makefile&quot;  VERBOSE=1 Accounts"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/parallels/CLionProjects/Accounts/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/parallels/CLionProjects/Accounts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/parallels/CLionProjects/Accounts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Accounts/fast">
+				<Option output="/home/parallels/CLionProjects/Accounts/cmake-build-debug/Accounts" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/parallels/CLionProjects/Accounts/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/parallels/CLionProjects/Accounts/libs"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/parallels/CLionProjects/Accounts/cmake-build-debug/Makefile&quot;  VERBOSE=1 Accounts/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/parallels/CLionProjects/Accounts/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/parallels/CLionProjects/Accounts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/parallels/CLionProjects/Accounts/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/parallels/CLionProjects/Accounts/PublicKeys.cpp">
+			<Option target="Accounts"/>
+		</Unit>
+		<Unit filename="/home/parallels/CLionProjects/Accounts/PublicKeys.h">
+			<Option target="Accounts"/>
+		</Unit>
+		<Unit filename="/home/parallels/CLionProjects/Accounts/SecretKeys.cpp">
+			<Option target="Accounts"/>
+		</Unit>
+		<Unit filename="/home/parallels/CLionProjects/Accounts/SecretKeys.h">
+			<Option target="Accounts"/>
+		</Unit>
+		<Unit filename="/home/parallels/CLionProjects/Accounts/libs/prf.cpp">
+			<Option target="Accounts"/>
+		</Unit>
+		<Unit filename="/home/parallels/CLionProjects/Accounts/libs/prf.h">
+			<Option target="Accounts"/>
+		</Unit>
+		<Unit filename="/home/parallels/CLionProjects/Accounts/libs/sha256.cpp">
+			<Option target="Accounts"/>
+		</Unit>
+		<Unit filename="/home/parallels/CLionProjects/Accounts/libs/sha256.h">
+			<Option target="Accounts"/>
+		</Unit>
+		<Unit filename="/home/parallels/CLionProjects/Accounts/main.cpp">
+			<Option target="Accounts"/>
+		</Unit>
+		<Unit filename="/home/parallels/CLionProjects/Accounts/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/parallels/CLionProjects/Accounts/cmake/Findsodium.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

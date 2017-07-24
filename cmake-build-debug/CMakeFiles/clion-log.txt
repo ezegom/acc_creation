@@ -1,0 +1,6 @@
+/opt/clion-2017.1.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/parallels/CLionProjects/Accounts
+[FOUND] Sodium libs at /usr/local/include
+main.cppSecretKeys.cppSecretKeys.hPublicKeys.cppPublicKeys.hlibs/prf.cpplibs/sha256.cpp
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/parallels/CLionProjects/Accounts/cmake-build-debug

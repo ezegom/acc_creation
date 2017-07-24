@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Accounts.dir/main.cpp.o CMakeFiles/Accounts.dir/SecretKeys.cpp.o CMakeFiles/Accounts.dir/PublicKeys.cpp.o CMakeFiles/Accounts.dir/libs/prf.cpp.o CMakeFiles/Accounts.dir/libs/sha256.cpp.o  -o Accounts -Wl,-rpath,/usr/local/lib /usr/local/lib/libsodium.so 
