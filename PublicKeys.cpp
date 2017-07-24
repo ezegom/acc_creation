@@ -40,17 +40,25 @@ uint256 PublicKeys::generatePkEnc(const uint256 &skEnc)
     return pk;
 }
 
-
+/*
+ * Uses PRF function and secret key to generate address public key
+ */
 uint256 PublicKeys::generatePkAddr(const uint252 &skAddr) {
     uint256 temp;
     temp = PRF_addr_a_pk(skAddr);
     return temp;
 }
 
+/*
+ * TODO: Encodes Address public key and encryptin public key as a payment address
+ */
 void PublicKeys::paymentAddress() const{
 
 }
 
+/*
+ * Returns a string with the hexadecimal of the address public key and encryption public key. Sepparated by a space.
+ */
 std::string PublicKeys::toHexString() const{
     std::string aSkHex = HexStr(this->addrPk.begin(),this->addrPk.end());
     std::string encSkHex = HexStr(this->encPk.begin(), this->encPk.end());
@@ -61,13 +69,22 @@ std::string PublicKeys::toHexString() const{
     std::cout<<temp<<std::endl;
     return temp;
 }
-
+/*
+ * Public function:
+ *  Once called generates the address and encryption public key and stores them both in a .pub file.
+ *  Call this function from wallet to generate the public keys.
+ *  Note: This function must be called after the secret keys have been initialized.
+ *  TODO: Error check if the secret keys have been created first.
+ */
 void PublicKeys::generateKeys(SecretKeys& sk) {
     this->encPk = generatePkEnc(sk.encSk);
     this->addrPk = generatePkAddr(sk.addrSk);
     storeKeys();
 }
-
+/*
+ * Creates a .pub file containing the address public key followed by the encryption public key in hexadecimal.
+ * both keys are separated by a space.
+ */
 void PublicKeys::storeKeys() {
     std::ofstream pubKeys(accName+".pub");
     pubKeys << toHexString();
