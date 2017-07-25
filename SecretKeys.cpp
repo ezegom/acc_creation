@@ -57,6 +57,8 @@ uint256 SecretKeys::encSecretKey() {
  *  TODO: Check if account name already exists before overwriting previous .priv files.
  */
 void SecretKeys::generateKeys() {
+    if (boost::filesystem::exists(accName+".priv"))
+        throw std::logic_error("An account with that name already exists");
     this->addrSk = random252();
     this->encSk = encSecretKey();
     storeKeys();
@@ -80,8 +82,7 @@ std::string SecretKeys::toHexString() const{
  * If such file already exists, throw error.
  */
 void SecretKeys::storeKeys() const{
-    if (boost::filesystem::exists(accName+".priv"))
-        throw std::logic_error("An account with that name already exists");
+
     std::ofstream privKeys(accName+".priv");
     privKeys << toHexString();
     privKeys.close();

@@ -82,6 +82,9 @@ void PublicKeys::generateKeys(SecretKeys& sk) {
     if (sk.encSk.IsNull())
         throw std::logic_error("Secret keys must be generated");
 
+    if (boost::filesystem::exists(accName+".pub"))
+        throw std::logic_error("An account with that name already exists");
+
     this->encPk = generatePkEnc(sk.encSk);
     this->addrPk = generatePkAddr(sk.addrSk);
     storeKeys();
@@ -91,8 +94,6 @@ void PublicKeys::generateKeys(SecretKeys& sk) {
  * both keys are separated by a space.
  */
 void PublicKeys::storeKeys() {
-    if (boost::filesystem::exists(accName+".pub"))
-        throw std::logic_error("An account with that name already exists");
     std::ofstream pubKeys(accName+".pub");
     pubKeys << toHexString();
     pubKeys.close();
