@@ -1,3 +1,4 @@
 *.priv
 *.pub
+*.o
 workspace.xml

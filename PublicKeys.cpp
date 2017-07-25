@@ -74,9 +74,13 @@ std::string PublicKeys::toHexString() const{
  *  Once called generates the address and encryption public key and stores them both in a .pub file.
  *  Call this function from wallet to generate the public keys.
  *  Note: This function must be called after the secret keys have been initialized.
- *  TODO: Error check if the secret keys have been created first.
  */
 void PublicKeys::generateKeys(SecretKeys& sk) {
+    //Secret keys must be created first
+    //If encryption secret key is set, addrSk must be set too.
+    if (sk.encSk.IsNull())
+        throw std::logic_error("Secret keys must be generated");
+
     this->encPk = generatePkEnc(sk.encSk);
     this->addrPk = generatePkAddr(sk.addrSk);
     storeKeys();
