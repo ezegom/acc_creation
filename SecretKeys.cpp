@@ -2,7 +2,7 @@
 #include <sodium.h>
 #include <iostream>
 #include <fstream>
-
+#include <boost/filesystem.hpp>
 /*
  * TODO: Best place to define this function.
  */
@@ -76,9 +76,12 @@ std::string SecretKeys::toHexString() const{
 }
 
 /*
- * TODO: Before saving file check if account name already exists. Don't want to replace already existing files.
+ * Stores the secret keys in .priv file.
+ * If such file already exists, throw error.
  */
 void SecretKeys::storeKeys() const{
+    if (boost::filesystem::exists(accName+".priv"))
+        throw std::logic_error("An account with that name already exists");
     std::ofstream privKeys(accName+".priv");
     privKeys << toHexString();
     privKeys.close();

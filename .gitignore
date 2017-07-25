@@ -1,4 +1,5 @@
 *.priv
 *.pub
 *.o
+clion-log.txt
 workspace.xml

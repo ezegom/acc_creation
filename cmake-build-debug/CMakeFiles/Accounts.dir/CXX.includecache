@@ -175,6 +175,8 @@ iostream
 -
 fstream
 -
+boost/filesystem.hpp
+-
 prf.h
 /home/parallels/CLionProjects/Accounts/prf.h
 
@@ -192,6 +194,8 @@ sodium.h
 iostream
 -
 fstream
+-
+boost/filesystem.hpp
 -
 
 /home/parallels/CLionProjects/Accounts/SecretKeys.h

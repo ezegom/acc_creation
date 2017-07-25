@@ -6,6 +6,7 @@
 #include "sodium.h"
 #include <iostream>
 #include <fstream>
+#include<boost/filesystem.hpp>
 #include "prf.h"
 
 template<typename T>
@@ -90,6 +91,8 @@ void PublicKeys::generateKeys(SecretKeys& sk) {
  * both keys are separated by a space.
  */
 void PublicKeys::storeKeys() {
+    if (boost::filesystem::exists(accName+".pub"))
+        throw std::logic_error("An account with that name already exists");
     std::ofstream pubKeys(accName+".pub");
     pubKeys << toHexString();
     pubKeys.close();
