@@ -57,7 +57,7 @@ void PublicKeys::paymentAddress() const{
 }
 
 /*
- * Returns a string with the hexadecimal of the address public key and encryption public key. Sepparated by a space.
+ * Returns a string with the hexadecimal of the address public key and encryption public key. Separated by a space.
  */
 std::string PublicKeys::toHexString() const{
     std::string aSkHex = HexStr(this->addrPk.begin(),this->addrPk.end());
